@@ -1,0 +1,231 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background:#f3f4f6;
+    margin:0;
+    padding:0;
+    color:#333;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:#ffffff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 6px 25px rgba(0,0,0,0.08);
+    border-top:6px solid #c4002f;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+    color:#c4002f;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+
+/* BLOQUE RESERVA */
+
+.reserva{
+    background:#fafafa;
+    padding:18px;
+    border-left:6px solid #c4002f;
+    margin-bottom:30px;
+    border-radius:4px;
+    font-size:15px;
+}
+
+/* TITULOS */
+
+h2{
+    border-bottom:2px solid #eee;
+    padding-bottom:6px;
+    margin-top:30px;
+    font-size:20px;
+    color:#222;
+}
+
+/* PARRAFOS */
+
+p{
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* TABLA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    font-size:14px;
+}
+
+table th, table td{
+    border:1px solid #e5e5e5;
+    padding:12px;
+    text-align:left;
+}
+
+table th{
+    background:#f6f6f6;
+    font-weight:600;
+}
+
+table tr:hover{
+    background:#fafafa;
+}
+
+/* TOTAL */
+
+.total{
+    text-align:right;
+    font-size:20px;
+    font-weight:700;
+    margin-top:15px;
+    color:#111;
+}
+
+/* TEXTO ROJO DESTACADO */
+
+.highlight{
+    color:#c4002f;
+    font-weight:bold;
+    font-size:17px;
+}
+
+/* LISTA */
+
+ul{
+    padding-left:18px;
+}
+
+ul li{
+    margin-bottom:6px;
+    font-size:14px;
+}
+
+/* FOOTER */
+
+.footer{
+    font-size:12px;
+    margin-top:35px;
+    padding-top:15px;
+    border-top:1px solid #eee;
+    color:#666;
+}
+
+/* BOTONES */
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    gap:12px;
+}
+
+/* BOTON */
+
+button{
+    padding:12px 22px;
+    border:none;
+    background:#c4002f;
+    color:white;
+    cursor:pointer;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#a30028;
+    transform:translateY(-1px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+    margin:20px;
+    padding:25px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+table th, table td{
+    font-size:13px;
+    padding:8px;
+}
+
+.total{
+    font-size:18px;
+}
+
+}
+
+/* IMPRESION */
+
+@media print{
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1501117716987-c8e1ecb210e3");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+.container{
+    box-shadow:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+.buttons{
+    display:none;
+}
+
+}
+.reserva-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.reserva-info{
+    flex:1;
+}
+
+.hotel-foto{
+    width:220px;
+    height:130px;
+    border-radius:6px;
+    overflow:hidden;
+    border:1px solid #ddd;
+}
+
+.hotel-foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}

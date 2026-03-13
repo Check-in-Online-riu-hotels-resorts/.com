@@ -1,0 +1,17 @@
+{
+  "reservas": [
+    {
+      "hotel": "riu-palace-punta-cana",
+      "codigo": "RNT9JA1Z",
+      "apellido": "pozo Aulinger",
+      "nombre": "Rene Mauricio"
+    },
+    {
+      "hotel": "riu-jalisco",
+      "codigo": "87654321",
+      "apellido": "garcia",
+      "nombre": "Maria"
+    }
+  ]
+}
+
